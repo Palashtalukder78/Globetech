@@ -1,0 +1,51 @@
+.universe-photo{
+    width: 80%;
+    transition: 10s;
+}
+.home{
+    display: flex;
+    align-items: center;
+}
+.mission-btn{
+    background-color: rgba(240, 248, 255, 0);
+    border: 1px solid #fff;
+    color: #fff;
+}
+.universe-photo:hover{
+   transform: rotate(360deg);
+}
+
+button {
+    z-index: 1;
+    font-size: inherit;
+    font-family: inherit;
+    padding: 0.5em 1em;
+    outline: none;
+    border: none;
+    background-color: hsl(236, 32%, 26%);
+}
+
+button:hover {
+    cursor: pointer;
+    animation: jelly 0.5s;
+}
+
+@keyframes jelly {
+
+    0%,
+    100% {
+        transform: scale(1, 1);
+    }
+
+    25% {
+        transform: scale(0.9, 1.1);
+    }
+
+    50% {
+        transform: scale(1.1, 0.9);
+    }
+
+    75% {
+        transform: scale(0.95, 1.05);
+    }
+}

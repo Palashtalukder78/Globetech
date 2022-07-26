@@ -1,0 +1,12 @@
+.logo{
+    width: 205px;
+    height: 42px;
+}
+.menu-item{
+    text-decoration: none;
+    margin-left: 25px;
+    color: #8FE5FF;
+}
+.menu-item:hover{
+    color: #D7F561;
+}

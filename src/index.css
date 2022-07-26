@@ -5,8 +5,24 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Poppins', sans-serif;
+  background-color: #01073b !important;
 }
-
+.primary-color{
+  color: #2EBBE5;
+}
+.secondary-color{
+  color: #E3F891;
+}
+.secondary-bg{
+  background-color: #E3F891;
+}
+.my-btn{
+  padding: 7px 15px;
+  font-weight: 700;
+  border-radius: 2px;
+  font-size: 14px;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
