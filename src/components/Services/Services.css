@@ -1,0 +1,35 @@
+.services-header h3,h1{
+    color: #fff;
+    letter-spacing: 3px;
+}
+.services-header h3{
+    font-size: 36px;
+    margin-bottom: 0;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.services-header h1{
+    font-size: 45px;
+    font-weight: 600;
+}
+.service-img{
+    min-height: 240px;
+}
+.service-item{
+    border-radius: 10px;
+    margin: 20px 10px;
+    padding: 10px;
+    box-shadow: 5px 5px 5px 5px rgba(146, 131, 131, 0.096);
+    transition: 0.7s;
+}
+.service-item:hover{
+    transform: translateY(-10px);
+}
+.more-btn{
+    background-color: #2397CD;
+    color: #fff;
+    border-radius: 25px;
+    font-weight: 200;
+    padding: 5px 25px;
+    letter-spacing: 0.15em;
+}
