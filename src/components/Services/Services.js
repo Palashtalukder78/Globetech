@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import useAuth from '../../hooks/useAuth';
 import Header from '../Shared/Header/Header';
-import './Services.css'
+import './Services.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Services = () => {
     const {allServices} = useAuth();
     const {services} = allServices;
+    
+    useEffect(() =>{
+        AOS.init();
+    },[]);
     return (
         <>
             <Header></Header>
@@ -16,7 +22,7 @@ const Services = () => {
                 <div class="row my-4">
                     {
                         services.map(service=>(
-                            <div class="col-md-4">
+                            <div class="col-md-4" data-aos="fade-left" data-aos-delay="500">
                                 <div className='bg-light service-item '>
                                     <img className='img-fluid service-img' src={service.photo} alt="service_image" />
                                     <div className='p-3'>

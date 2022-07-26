@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Login.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretLeft } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const Login = () => {
+    useEffect(() =>{
+        AOS.init();
+    },[]);
     return (
         <div class="row login">
             <div class="col-md-3">
@@ -19,8 +25,8 @@ const Login = () => {
                 </div>
             </div>
             <div class="col-md-9">
-                <div className='text-center login-form'>
-                    <form className='form'>
+                <div className='text-center login-form' >
+                    <form className='form' data-aos="fade-down-left" data-aos-delay="500">
                         <div>
                             <h3>Welcome</h3>
                             <small>Sign in to your account</small>
